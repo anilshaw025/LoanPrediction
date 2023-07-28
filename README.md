@@ -18,7 +18,7 @@ Given a set of attributes for an Individual, determine if a credit line should b
 
 ### Data dictionary:
 
-"loan_amnt :" The listed amount of the loan applied for by the borrower. If at some point in time, the credit department reduces the loan amount, then it will be reflected in this value.
+loan_amnt : The listed amount of the loan applied for by the borrower. If at some point in time, the credit department reduces the loan amount, then it will be reflected in this value.
 term : The number of payments on the loan. Values are in months and can be either 36 or 60.
 int_rate : Interest Rate on the loan
 installment : The monthly payment owed by the borrower if the loan originates.
@@ -45,32 +45,10 @@ application_type : Indicates whether the loan is an individual application or a 
 mort_acc : Number of mortgage accounts.
 pub_rec_bankruptcies : Number of public record bankruptcies
 Address: Address of the individual
-Concept Used:
+
+### Concept Used:
 
 Exploratory Data Analysis
 Feature Engineering
 Logistic Regression
 Precision Vs Recall Tradeoff
-What does ‘good’ look like?
-
-Import the dataset and do usual exploratory data analysis steps like checking the structure & characteristics of the dataset
-Check how much target variable (Loan_Status) depends on different predictor variables (Use count plots, box plots, heat maps etc)
-Check correlation among independent variables and how they interact with each other
-Simple Feature Engineering steps:
-E.g.: Creation of Flags- If value greater than 1.0 then 1 else 0. This can be done on:
-
-1. Pub_rec
-2. Mort_acc
-3. Pub_rec_bankruptcies
-
-Missing values and Outlier Treatment
-Scaling - Using MinMaxScaler or StandardScaler
-Use Logistic Regression Model from Sklearn/Statsmodel library and explain the results
-Results Evaluation:
-Classification Report
-ROC AUC curve
-Precision recall curve
-Tradeoff Questions:
-How can we make sure that our model can detect real defaulters and there are less false positives? This is important as we can lose out on an opportunity to finance more individuals and earn interest on it.
-Since NPA (non-performing asset) is a real problem in this industry, it’s important we play safe and shouldn’t disburse loans to anyone
-Provide actionable Insights & Recommendations
