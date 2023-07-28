@@ -7,9 +7,13 @@ The data science team is building an underwriting layer to determine the creditw
 It deploys formal credit to salaried individuals and businesses 4 main financial instruments:
 
 Personal Loan
+
 EMI Free Loan
+
 Personal Overdraft
+
 Advance Salary Loan
+
 This case study will focus on the underwriting process behind Personal Loan only
 
 ### Problem Statement:
@@ -75,6 +79,9 @@ Address: Address of the individual
 ### Concept Used:
 
 Exploratory Data Analysis
+
 Feature Engineering
+
 Logistic Regression
+
 Precision Vs Recall Tradeoff
