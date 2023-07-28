@@ -19,7 +19,9 @@ Given a set of attributes for an Individual, determine if a credit line should b
 ### Data dictionary:
 
 loan_amnt : The listed amount of the loan applied for by the borrower. If at some point in time, the credit department reduces the loan amount, then it will be reflected in this value.
+
 term : The number of payments on the loan. Values are in months and can be either 36 or 60.
+
 int_rate : Interest Rate on the loan
 installment : The monthly payment owed by the borrower if the loan originates.
 grade : LoanTap assigned loan grade
